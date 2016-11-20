@@ -29,11 +29,21 @@ html, body{
     position: relative;
 }
 
+#main-container > div{
+    padding: 15px;
+    width: 100%;
+}
+
+#main-container > div > div{
+    margin: 0 auto;
+    width: 98%;
+    max-width: 960px;
+}
 
 /*------------------------------------*/
 /*  Menu-droite     */
 /*------------------------------------*/
-
+/*
 #menu-droite{
     list-style-type: none;
     display: block;
@@ -70,31 +80,93 @@ html, body{
     background: #808080;
 }
 
-
+*/
 /*------------------------------------*/
-/*  screen-intro     */
+/*  accueil     */
 /*------------------------------------*/
 
-#screen-intro{
-    display: block;
-    width: 960px;
-    height: 400px;
+#accueil{
+    background: url('Images/Spirebluff-Canal-Kaladesh.png') no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100%;
     margin: 150px auto;
-    margin-left: 200px;
+    margin-left: auto;
+    margin-right: auto;
     float: left;
     border: 1px solid white;
-    text-align: left;
+    text-align: center;
     color: #fff;
+    
 }
 
-#screen-intro > p{
-    font-size: 24px;
+#accueil > h1{
+    font-size: 48px;
+}
+
+#accueil > p{
+    font-size: 16px;
     text-align: justify;
 }
 /*------------------------------------*/
-/*       */
+/*  Acces aux pages web   */
 /*------------------------------------*/
+
+#main-container > #image-mtg{
+    background: #EC3024;
+    min-height: 300px;
+    padding: 0;
+}
+
+#acces-page-web > #image-mtg > div{
+    margin: 0;   
+    width: 480px;
+    height: 300px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+#acces-page-web > div > div{
+    overflow: hidden;
+    height: 300px;
+    width: 480px;
+    flex-grow: 1;
+    flex-basis: auto;
+    cursor: pointer;
+}
+
+#acces-page-web > div > div.image-mtg{
+    width: 100%;
+    height: 100%;
+    background: no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
 
 /*------------------------------------*/
 /*       */
 /*------------------------------------*/
+
+div.do-not-touch{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 280px;
+    text-align: center;
+    padding: 12px;    
+    border: 1px solid #00ab12;
+    background: #a4f2af;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+div.do-not-touch > p:hover{
+    background: #ff0000;
+
+}
