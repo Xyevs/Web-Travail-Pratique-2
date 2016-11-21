@@ -9,12 +9,20 @@ version: 0.15
 <html>
     <head>
         <title>La voute enchantée</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="do-not-touch"><p>DO NOT TOUCH!!!</p></div>
+        <div class="do-not-touch">
+            <div>
+                <a href="donotclic.bat">
+                DO NOT TOUCH!!!
+                </a>
+            </div>         
+        </div>
+        
         <div id="main-container">
             <div id="accueil">
                 <h1>Bienvenue au site de la voute enchantée</h1>
@@ -28,45 +36,55 @@ version: 0.15
 
             <div id="acces-page-web">
                 <div>
+                     <div>
+                        <a href="listeCarte.html" target="_blank">
+                            <div class="image-mtg" style="background-image: url('Images/Black-Lotus.png');">
+                                <div class="content liste">
+                                    <h1>Liste des cartes</h1>
+                                    Vous pouvez magasiner notre selection de carte en inventaire que nous
+                                    avons au magasin.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
                     <div>
-                        <div class="image-mtg" style="background-image: url('Images/Verdurous-Gearhulk.png')">
-                            <p>
-                                Vous pouvez magasiner notre selection de carte en inventaire que nous
-                                avons au magasin.
-                            </p>
+                        <a href="prix.html" target="_blank">
+                            <div class="image-mtg" style="background-image: url('Images/Verdurous-Gearhulk.png');">
+                                <div class="content liste">
+                                    <h1>Prix des cartes</h1>
+                                    Ce lien vous donne accès au page web de jeux face à face pour
+                                    pour obtenir les prix des cartes.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+             
+                    <div>
+                        <a href="classement.html" target="_blank">
+                            <div class="image-mtg" style="background-image: url('Images/Young-Chandra.png');" >
+                                <div class="content-classement">
+                                    <h1>Le classement</h1>
+                                    Pour voir le classement de la ligue du FNM(FRIDAY NIGHT MAGIC!
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--
+                        <div>
+                            <div class="image-mtg" style="background-image: url('')"></div>
                         </div>
-                   </div>
 
-                    <div>
-                        <div class="image-mtg" style="background-image: url('Images/Young-Chandra.png')"></div>
-                    </div>
+                        <div>
+                            <div class="image-mtg" style="background-image: url('')"></div>
+                        </div>
 
-                    <div>
-                        <div class="image-mtg" style="background-image: url('')"></div>
-                    </div>
-
-                    <div>
-                        <div class="image-mtg" style="background-image: url('')"></div>
-                    </div>
-
-                    <div>
-                        <div class="" style="background-image: url('')"></div>
-                    </div>
+                        <div>
+                            <div class="" style="background-image: url('')"></div>
+                        </div>
+                    -->
                 </div>
             </div>
-
-
-            <!--
-            <div>
-                <ul id="menu-droite">
-                    <li>Accueil</li>
-                    <li>Gatherer</li>
-                    <li>Liste inventaire</li>
-                    <li>Magic block set</li>
-                    <li></li>
-                </ul>
-            </div>
-            -->
         </div>
     </body>
 </html>

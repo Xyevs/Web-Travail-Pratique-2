@@ -1,6 +1,4 @@
 /*
-*/
-/* 
     Created on : 2016-11-07, 10:57:23
     Author     : xyevs
 */
@@ -11,15 +9,42 @@
     box-sizing: border-box;
 }
 
-html, body{
+html, 
+body{
     height: 100%;
     position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
     background: url('Images/kaladeshBG.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: #fff;
+    text-shadow: 2px 2px 8px #FF0000;
+
 }
 
+h1{
+    font-size: 72px;
+    line-height: 62px;	
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active{
+    color: #fff;
+    font-size: 24px;  
+    padding-top: 150px;
+    text-align: center;
+    text-decoration: none;
+}
 /*------------------------------------*/
 /* STRUCTURE      */
 /*------------------------------------*/
@@ -34,10 +59,16 @@ html, body{
     width: 100%;
 }
 
+#main-container > #accueil > p{
+    font-size: 36px;
+    text-align: justify;
+    padding-top: 50px;
+}
+
 #main-container > div > div{
     margin: 0 auto;
     width: 98%;
-    max-width: 960px;
+    max-width: available;
 }
 
 /*------------------------------------*/
@@ -85,13 +116,13 @@ html, body{
 /*  accueil     */
 /*------------------------------------*/
 
-#accueil{
+#main-container > #accueil{
     background: url('Images/Spirebluff-Canal-Kaladesh.png') no-repeat;
     background-size: cover;
     background-position: top;
     width: 100%;
     height: 100%;
-    margin: 150px auto;
+    /*margin: 150px auto;*/
     margin-left: auto;
     margin-right: auto;
     float: left;
@@ -101,34 +132,25 @@ html, body{
     
 }
 
-#accueil > h1{
-    font-size: 48px;
-}
-
-#accueil > p{
-    font-size: 16px;
-    text-align: justify;
-}
 /*------------------------------------*/
 /*  Acces aux pages web   */
 /*------------------------------------*/
 
-#main-container > #image-mtg{
-    background: #EC3024;
-    min-height: 300px;
+#main-container > #acces-page-web{
+    min-height: min-content;
     padding: 0;
+    width: 100%;
 }
 
-#acces-page-web > #image-mtg > div{
+#main-container > #acces-page-web > div{
     margin: 0;   
-    width: 480px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-
 }
 
 #acces-page-web > div > div{
@@ -137,18 +159,81 @@ html, body{
     width: 480px;
     flex-grow: 1;
     flex-basis: auto;
+    position: relative;
     cursor: pointer;
 }
 
-#acces-page-web > div > div.image-mtg{
+#acces-page-web > div > div > a > div.image-mtg{
     width: 100%;
     height: 100%;
     background: no-repeat center;
     background-size: cover;
     position: relative;
+    transition: all 1s;
 }
 
+#image-mtg > div > div > a > div.image-mtg{
+    background: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    font-size: 48px;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    padding: 15px;
+    padding-top: 160px;
+    text-align: center;
+    transition: background 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
 
+#acces-page-web > div > div:hover > a > div.image-mtg{
+    transform: scale(1.5, 1.5);
+}
+
+#acces-page-web > div > div > a > div > div.content.liste:hover{
+    background: rgba(34, 121, 191, 0.55);
+}
+
+#acces-page-web > div > div > a > div > div.content.classement:hover{
+    background: rgba(34, 121, 191, 0.55);
+}
+
+/*------------------------------------*/
+/* image pour la page classement      */
+/*------------------------------------*/
+#main-container > #web-classement{
+    background: #EC3024;
+    min-height: 600px;
+    padding: 0;
+}
+
+#web-classement > #image-mtg-classement {
+    width: 480px;
+    height: 960px;
+    position: absolute;
+    background-position: center;
+}
+
+#image-mtg-classement > div > div > ol{
+    display: block;
+    padding-top: 25px;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center; 
+}
+
+/*------------------------------------*/
+/*       */
+/*------------------------------------*/
+/*------------------------------------*/
+/*       */
+/*------------------------------------*/
+/*------------------------------------*/
+/*       */
+/*------------------------------------*/
 /*------------------------------------*/
 /*       */
 /*------------------------------------*/
@@ -166,7 +251,6 @@ div.do-not-touch{
     cursor: pointer;
 }
 
-div.do-not-touch > p:hover{
+div.do-not-touch > div > a:hover{
     background: #ff0000;
-
 }
