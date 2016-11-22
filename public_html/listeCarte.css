@@ -1,0 +1,116 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-11-22, 05:28:58
+    Author     : xyevs
+*/
+*{
+    padding: 0;
+    margin: 0;
+    /*LA COMMANDE LA PLUS IMPORTANT DE NOTRE VIE*/
+    box-sizing: border-box;
+}
+p{
+    text-align: justify;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-left: 190px;
+    width: 600px;
+}
+#main-container{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+#content-wrapper{
+    background: url('Images/kaladeshBG.jpg') no-repeat;
+    float: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content{
+    background: url('Images/Spirebluff-Canal-Kaladesh-bg.png') no-repeat;
+    min-height: 7500px;
+    min-width: 1600px;
+    margin-top: 290px;
+    margin-left: 180px;
+    border-top: 1px solid #A7D7F9;
+    border-bottom: 1px solid #A7D7F9;
+    border-left: 1px solid #A7D7F9;
+    margin-right: auto;
+}
+
+#menu{
+    width: 180px;
+    float: left;
+    margin-left: -0%;
+    background: #F4F4F4;
+    font-size: 14px;
+}
+
+#menu-img-accueil{
+    width: 180px;
+    height: 108px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    transition: 0.5s;
+}
+
+#menu-img-classement{
+    width: 180px;
+    height: 108px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    transition: 0.5s;
+}
+
+#menu-img-prix{
+    width: 180px;
+    height: 108px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#menu-img-accueil:hover{
+    transform: scale(1.5, 1.5);
+    background: rgba(34, 121, 191, 0.55);
+}
+
+#menu-img-classement:hover{
+    transform: scale(1.5, 1.5);
+    background: rgba(34, 121, 191, 0.55);
+}
+
+#menu-img-prix:hover{
+    transform: scale(1.5, 1.5);
+    background: rgba(34, 121, 191, 0.55);
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active{
+    color: #fff;
+    font-size: 24px;  
+    padding-top: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+}

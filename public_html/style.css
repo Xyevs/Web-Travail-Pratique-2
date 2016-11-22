@@ -34,6 +34,10 @@ h1{
     text-shadow: 2px 2px 8px #FF0000;
 }
 
+p{
+    margin-top: 25px;
+}
+
 a,
 a:link,
 a:hover,
@@ -60,7 +64,7 @@ a:active{
 }
 
 #main-container > #accueil > p{
-    font-size: 36px;
+    font-size: 24px;
     text-align: justify;
     padding-top: 50px;
 }
@@ -187,6 +191,7 @@ a:active{
     text-align: center;
     transition: background 0.3s;
     font-family: 'Open Sans', sans-serif;
+    justify-content: center;
 }
 
 #acces-page-web > div > div:hover > a > div.image-mtg{
@@ -201,29 +206,7 @@ a:active{
     background: rgba(34, 121, 191, 0.55);
 }
 
-/*------------------------------------*/
-/* image pour la page classement      */
-/*------------------------------------*/
-#main-container > #web-classement{
-    background: #EC3024;
-    min-height: 600px;
-    padding: 0;
-}
 
-#web-classement > #image-mtg-classement {
-    width: 480px;
-    height: 960px;
-    position: absolute;
-    background-position: center;
-}
-
-#image-mtg-classement > div > div > ol{
-    display: block;
-    padding-top: 25px;
-    padding-left: auto;
-    padding-right: auto;
-    text-align: center; 
-}
 
 /*------------------------------------*/
 /*       */
@@ -253,4 +236,8 @@ div.do-not-touch{
 
 div.do-not-touch > div > a:hover{
     background: #ff0000;
+}
+
+.clear{
+    clear: both;
 }
